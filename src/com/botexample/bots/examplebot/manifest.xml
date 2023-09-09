@@ -1,0 +1,22 @@
+<manifest>
+    <main-class>com.botexample.bots.examplebot.ExampleBot</main-class>
+    <name>ExampleBot</name>
+    <tag-line>Just an example bot for example purposes</tag-line>
+    <internal-id>example-bot</internal-id>
+    <description>An example bot for all of your exampling needs.</description>
+    <version>0.0.0</version>
+    <compatibility>
+        <game>OSRS</game>
+    </compatibility>
+    <categories>
+        <category>OTHER</category>
+    </categories>
+    <access>public</access>
+    <tags>
+        <tag>Example</tag>
+    </tags>
+    <obfuscation>
+        <exclude>
+        </exclude>
+    </obfuscation>
+</manifest>
