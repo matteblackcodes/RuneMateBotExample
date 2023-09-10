@@ -1,42 +1,27 @@
-# RuneMate Kotlin Example
-A RuneMate Kotlin example bot to get you started developing RuneMate bots in Kotlin!
+# RuneMate Example Bot
+A RuneMate example bot to get you started developing RuneMate bots!
 This project and guide have only been tested on Windows, but the guide should work for MacOS as well.
 
-This guide isn't meant to teach you how to make a bot in Kotlin, just how to set up your IDE.
+This guide isn't meant to teach you how to make a bot, just how to set up your IDE for bot development.
 
 
 ## Getting started
 
-### Install Temurin 17 JDK
+### Set up the JDK
 
-You will need to install the Temurian 17 JDK in order to develop for RuneMate. You can do so by following these instructions.
+RuneMate is bundled with a JDK, so we can just point to that!
 
-#### Step 1: Open Project Structure
+- Navigate to `File -> Project Structure...`.
+- On the left side of the Project Structure window, select `Project`.
+- Click the SDK select dropdown and go down to `+ Add SDK`.
+- Select `JDK...`. 
+- Navigate to your RuneMate install, usually `C:\Program Files\RuneMate` and select the `jre` Folder.
 
-In your IntelliJ IDE, navigate to `File -> Project Structure`. This will open the Project Structure dialog.
-
-#### Step 2: Set up Project SDK
-
-In the Project Structure dialog, select Project from the options on the left.
-
-Under Project SDK, click on the drop-down menu. If you already have `Temurin 17` installed, it should appear in this list. If not, you will need to download it.
-
-#### Step 3: Download JDK
-
-If you do not see Temurin 17 in the list, click on `New... -> Download JDK...`.
-
-![Download JDK](tutorial-assets/download-jdk.png)
-
-In the Download JDK dialog, set the Vendor filter to Eclipse Temurin. The version number should be 17. Click on Download to start the download process
-
-#### Step 4: Set Project SDK to Temurin 17
-
-Once the download is complete, Temurin 17 should now be an option in the Project SDK drop-down menu. Select it and click OK to close the Project Structure dialog.
-
+Now your JDK should be correctly set to temurin-17 
 
 ### Install Module Dependencies
 
-You will need to add `RuneMate.jar`, `kotlin-stdlib.jar` and `runemate-game-api.jar` to your project as module dependencies.
+You will need to add `RuneMate.jar`, `lombok.jar` and `runemate-game-api.jar` to your project as module dependencies.
 
 
 - Click on File from the toolbar.
@@ -47,11 +32,10 @@ You will need to add `RuneMate.jar`, `kotlin-stdlib.jar` and `runemate-game-api.
 - Select the `JARs or directories` option.
 - Navigate to the location of your `RuneMate.jar`, typically located at `C:\Program Files\RuneMate\RuneMate.jar` for Windows users.
 
-You will need to repeat the above steps to add `runemate-game-api.jar` and `kotlin-stdlib.jar` to your module dependencies.
-Both of these files can typically be found at `C:\Users\<YourUser>\RuneMate\resources`
+You will need to repeat the above steps to add `runemate-game-api.jar` which is typically located at `C:\Users\<YourUser>\RuneMate\resources`, for Windows users.
 
-![module dependencies](tutorial-assets/module-dependencies.png)
 Your module dependencies should look something like this.
+![module dependencies](tutorial-assets/module-dependencies.png)
 
 
 ### Set up the Run Configuration
@@ -104,5 +88,7 @@ To do this, run the `LAUNCH` run configuration and
 
 Congratulations, Your IDE has been set up successfully! But you might be asking yourself "What now?"
 
-You can get started making your bot by checking out some tutorials on the RuneMate forums.
+Now that your environment is set up, you can start developing your bot. RuneMate has various tutorials available to help you get started with writing bots for RuneMate. You can also check out other bot examples and resources in the [RuneMate community](https://www.runemate.com/community/#developer.161).
+
+The best way to stay up to date with how to make bots and the newest trends in bot development is to join the [RuneMate Discord](https://discord.gg/zKEJgmQv)!
 
